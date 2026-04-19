@@ -7,7 +7,7 @@ document.addEventListener('click', function(e) {
     
     const profileUrl = citeElement.getAttribute('data');
     const authorName = citeElement.innerText;
-    const authorImg = citeElement.closest('.avatar-box')?.querySelector('img')?.src || '';
+    const authorImg = citeElement.closest('.comment-inner')?.querySelector('img')?.src || '';
 
     const idMatch = profileUrl.match(/profile\/(\d+)/);
     const profileId = idMatch ? idMatch[1] : null;
