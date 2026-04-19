@@ -1,23 +1,4 @@
-<div id='profile-modal' class='sm-modal'>
-  <div class='sm-modal-content'>
-    <span class='close-modal'>&times;</span>
-    <div class='sm-modal-body'>
-      <div class='modal-left'>
-        <img id='modal-avatar' src='' alt='Profile Pic'/>
-        <h4 id='modal-name'></h4>
-      </div>
-      <div class='modal-right'>
-        <p><strong>This Month:</strong> <span id='month-count'>0</span> comments</p>
-        <p><strong>Total:</strong> <span id='total-count'>0</span> comments</p>
-        <p><strong>Profile Views:</strong> <span id='view-count'>0</span></p>
-        <p><strong>Blog:</strong> <a id='modal-blog' href='#'>None</a></p>
-        <p><strong>Blogger:</strong> <a id='modal-link' href=''>View Profile</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script>// <![CDATA[
+// <![CDATA[
 document.addEventListener('click', function(e) {
   const citeElement = e.target.closest('cite.user');
   
@@ -76,15 +57,4 @@ comments.forEach(comment => {
   document.getElementById('total-count').innerText = totalCount;
   document.getElementById('month-count').innerText = monthCount;
 }
-// ]]></script>
-
-<style>
-.sm-modal{display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6);}
-.sm-modal-content{background: #fff; margin: 10% auto; padding: 20px; width: 450px; border-radius: 12px; position: relative;}
-.sm-modal-body{display: flex; gap: 20px;}
-.modal-left{flex: 0 0 120px; text-align: center; border-right: 1px solid #eee; padding-right: 15px;}
-#modal-avatar{width: 80px; height: 80px; border-radius: 50%; object-fit: cover;}
-.modal-right{flex: 1;}
-.modal-right p{margin: 8px 0; font-size: 14px;}
-.close-modal{position: absolute; right: 15px; top: 10px; cursor: pointer; font-size: 24px;}
-</style>
+// ]]>
