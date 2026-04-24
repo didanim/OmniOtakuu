@@ -43,6 +43,6 @@ function applyKaoani(container) {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  const targets = document.querySelectorAll('.comment-body');
+  const targets = document.querySelectorAll('.comment-body .message-content');
   targets.forEach(target => applyKaoani(target));
 });
