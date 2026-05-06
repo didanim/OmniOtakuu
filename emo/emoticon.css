@@ -1,0 +1,18 @@
+.emo {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    vertical-align: middle;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.emo-smile { background-image: url('YOUR_SMILE_GIF_URL'); }
+.emo-angry { background-image: url('YOUR_ANGRY_GIF_URL'); }
+.emo-laugh { background-image: url('YOUR_LAUGH_GIF_URL'); }
+.emo-xd    { background-image: url('YOUR_XD_GIF_URL'); }
+.emo-cry   { background-image: url('YOUR_CRY_GIF_URL'); }
+.emo-kiss  { background-image: url('YOUR_KISS_GIF_URL'); }
+.emo-tongue{ background-image: url('YOUR_TONGUE_GIF_URL'); }
+.emo-shock { background-image: url('YOUR_SHOCK_GIF_URL'); }
+.emo-sad   { background-image: url('YOUR_SAD_GIF_URL'); }
