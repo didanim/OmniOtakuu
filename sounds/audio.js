@@ -46,8 +46,8 @@ function warmUp() {
     loadSound('lightOn', 'light-on.mp3');
     loadSound('lightOff', 'light-off.mp3');
     loadSound('paperTurn', 'paper-turn.mp3');
-    loadSound('paperCrumple', 'paper-crumple.mp3'); // Added missing declaration
-    loadSound('splat', 'splat.mp3');                // Added missing declaration
+    loadSound('paperCrumple', 'crumpling-paper.mp3'); // Added missing declaration
+    loadSound('splat', 'deltasplat.mp3');                // Added missing declaration
 }
 
 window.addEventListener('pointerdown', warmUp, { once: true });
